@@ -368,17 +368,17 @@ h2.job-title {
 @media (max-width: 480px) {
         /* For very small screens like iPhone SE */
         body {
-            font-size: 12px; /* Adjust font size further */
+            font-size: 8px; /* Adjust font size further */
         }
 
         .sidebar {
-            width: 50%; /* Full-width sidebar on very small screens */
+            width: 30%; /* Full-width sidebar on very small screens */
             padding: 8px;
         }
 
         .sidebar img {
-            width: 50px; /* Smallest profile image */
-            height: 50px;
+            width: 30px; /* Smallest profile image */
+            height: 30px;
         }
 
         .skills-container {
@@ -387,8 +387,8 @@ h2.job-title {
         }
 
         .skill-box, .experience-box {
-            width: 50%; /* Full width for skill and experience boxes */
-            margin-bottom: 5px; /* Reduce margin for tight space */
+            width: 40%; /* Full width for skill and experience boxes */
+            margin-bottom: 3px; /* Reduce margin for tight space */
         }
 
         form input, form textarea, form button {
