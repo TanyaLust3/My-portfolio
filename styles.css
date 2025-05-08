@@ -377,8 +377,8 @@ h2.job-title {
         }
 
         .sidebar img {
-            width: 30px; /* Smallest profile image */
-            height: 30px;
+            width: 20px; /* Smallest profile image */
+            height: 20px;
         }
 
         .skills-container {
@@ -387,7 +387,7 @@ h2.job-title {
         }
 
         .skill-box, .experience-box {
-            width: 40%; /* Full width for skill and experience boxes */
+            width: 20%; /* Full width for skill and experience boxes */
             margin-bottom: 3px; /* Reduce margin for tight space */
         }
 
