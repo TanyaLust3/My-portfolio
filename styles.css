@@ -296,6 +296,112 @@ h2.job-title {
       transform: translateY(0);
     }
   }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* General Layout Adjustments */
+    body {
+        padding: 10px;
+        font-size: 14px; /* Smaller text size for mobile */
+    }
+    
+    /* Sidebar */
+    .sidebar {
+        width: 200px; /* Reduce sidebar width on mobile */
+        position: relative; /* Make sidebar move with content */
+    }
+
+    .main-content {
+        margin-left: 0; /* Allow content to be full width on mobile */
+        padding: 20px;
+    }
+
+    /* Sidebar Navigation Links */
+    .sidebar ul li a {
+        padding: 8px;
+    }
+
+    /* Skill and Experience Boxes */
+    .skills-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .skill-box, .experience-box {
+        width: 100%; /* Make boxes full width */
+        margin-bottom: 20px; /* Space between boxes */
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+        gap: 10px;
+    }
+
+    /* Buttons and Forms */
+    form input, form textarea, form button {
+        width: 100%; /* Make inputs and buttons full width */
+        margin-bottom: 10px;
+    }
+
+    /* Lightbox Image */
+    .lightbox img {
+        max-width: 80%; /* Make lightbox image smaller on mobile */
+    }
+
+    /* Sidebar Profile Image */
+    .sidebar img {
+        width: 120px; /* Smaller image size for mobile */
+        height: 120px;
+    }
+
+    /* Header Adjustments */
+    h1#name, h2.job-title {
+        font-size: 1.2em; /* Adjust header size for mobile */
+    }
+
+    /* Lightbox Animation */
+    .lightbox img {
+        animation: none; /* Remove animation for mobile */
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    /* Reduce margins and padding */
+    body {
+        padding: 5px;
+    }
+
+    .sidebar {
+        width: 100%; /* Make sidebar take full width */
+        padding: 10px;
+    }
+
+    .sidebar img {
+        width: 100px; /* Even smaller profile image */
+        height: 100px;
+    }
+
+    /* Ensure content is readable */
+    .main-content {
+        margin-left: 0;
+    }
+
+    /* Adjust links and buttons */
+    .sidebar ul li a {
+        font-size: 12px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+
+    /* Portfolio images */
+    .portfolio-grid img {
+        width: 100%; /* Ensure portfolio images are responsive */
+    }
+}
+
   
   .float {
     animation: float 3s ease-in-out infinite;
