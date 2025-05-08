@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: /path-to-block/  # Optional, if you want to block certain pages
-Allow: /  # Allows all pages to be indexed
+Allow: /
+Sitemap: https://tanyalust3.github.io/My-portfolio/sitemap.xml
