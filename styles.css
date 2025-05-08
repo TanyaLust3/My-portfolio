@@ -372,13 +372,13 @@ h2.job-title {
         }
 
         .sidebar {
-            width: 80%; /* Full-width sidebar on very small screens */
+            width: 50%; /* Full-width sidebar on very small screens */
             padding: 8px;
         }
 
         .sidebar img {
-            width: 80px; /* Smallest profile image */
-            height: 80px;
+            width: 50px; /* Smallest profile image */
+            height: 50px;
         }
 
         .skills-container {
@@ -387,7 +387,7 @@ h2.job-title {
         }
 
         .skill-box, .experience-box {
-            width: 80%; /* Full width for skill and experience boxes */
+            width: 50%; /* Full width for skill and experience boxes */
             margin-bottom: 5px; /* Reduce margin for tight space */
         }
 
@@ -400,7 +400,7 @@ h2.job-title {
         }
 
         .portfolio-grid img {
-            width: 800%; /* Ensure images scale down properly */
+            width: 100%; /* Ensure images scale down properly */
         }
     }
 }
