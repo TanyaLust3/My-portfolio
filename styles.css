@@ -48,7 +48,7 @@ body.dark-theme a {
 }
 
 .sidebar {
-    width: 200px;
+    width: 180px;
     background-color: #f6d1e0; /* Light pastel pink for sidebar */
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
