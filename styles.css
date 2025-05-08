@@ -365,21 +365,92 @@ h2.job-title {
     }
 }
 
-/* Small mobile adjustments */
-@media (max-width: 480px) {
-    /* Reduce margins and padding */
+/* Mobile Styles */
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* General Layout Adjustments */
+    body {
+        padding: 10px;
+        font-size: 13px; /* Smaller text size for better mobile readability */
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 180px; /* Slightly smaller sidebar for mobile */
+        position: relative;
+        padding: 15px; /* Reduce padding to optimize space */
+    }
+
+    .main-content {
+        margin-left: 0; /* Full width content on mobile */
+        padding: 15px;
+    }
+
+    /* Sidebar Navigation Links */
+    .sidebar ul li a {
+        padding: 7px;
+        font-size: 14px; /* Slightly smaller font size for navigation */
+    }
+
+    /* Skill and Experience Boxes */
+    .skills-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .skill-box, .experience-box {
+        width: 100%; /* Full width for skill and experience boxes */
+        margin-bottom: 15px; /* Space between boxes */
+        padding: 15px;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+        gap: 8px;
+    }
+
+    /* Buttons and Forms */
+    form input, form textarea, form button {
+        width: 100%; /* Full width inputs and buttons */
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    /* Lightbox Image */
+    .lightbox img {
+        max-width: 75%; /* Make lightbox image slightly smaller on mobile */
+    }
+
+    /* Sidebar Profile Image */
+    .sidebar img {
+        width: 110px; /* Slightly smaller profile image */
+        height: 110px;
+    }
+
+    /* Header Adjustments */
+    h1#name, h2.job-title {
+        font-size: 1.1em; /* Adjust header size for mobile */
+    }
+
+    /* Lightbox Animation */
+    .lightbox img {
+        animation: none; /* Remove animation for mobile */
+    }
+
+    /* Reduce margins and padding further for smaller screens */
     body {
         padding: 5px;
     }
 
     .sidebar {
-        width: 100%; /* Make sidebar take full width */
+        width: 100%; /* Sidebar takes full width on very small screens */
         padding: 10px;
     }
 
     .sidebar img {
-        width: 100px; /* Even smaller profile image */
-        height: 100px;
+        width: 90px; /* Smaller profile image for smaller screens */
+        height: 90px;
     }
 
     /* Ensure content is readable */
@@ -389,21 +460,59 @@ h2.job-title {
 
     /* Adjust links and buttons */
     .sidebar ul li a {
-        font-size: 12px;
+        font-size: 12px; /* Smaller text for mobile */
     }
 
     form button {
-        font-size: 14px;
+        font-size: 13px; /* Adjust button text size */
     }
 
     /* Portfolio images */
     .portfolio-grid img {
         width: 100%; /* Ensure portfolio images are responsive */
     }
-}
 
-  
-  .float {
-    animation: float 3s ease-in-out infinite;
-  }
-  
+    .content-box {
+        padding: 20px; /* Reduce padding inside content boxes */
+    }
+
+    /* General Styling Tweaks for Small Mobile */
+    @media (max-width: 480px) {
+        /* For very small screens like iPhone SE */
+        body {
+            font-size: 12px; /* Adjust font size further */
+        }
+
+        .sidebar {
+            width: 100%; /* Full-width sidebar on very small screens */
+            padding: 8px;
+        }
+
+        .sidebar img {
+            width: 80px; /* Smallest profile image */
+            height: 80px;
+        }
+
+        .skills-container {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .skill-box, .experience-box {
+            width: 100%; /* Full width for skill and experience boxes */
+            margin-bottom: 10px; /* Reduce margin for tight space */
+        }
+
+        form input, form textarea, form button {
+            padding: 8px; /* Reduce input padding */
+        }
+
+        h1#name, h2.job-title {
+            font-size: 1em; /* Adjust header for small screens */
+        }
+
+        .portfolio-grid img {
+            width: 100%; /* Ensure images scale down properly */
+        }
+    }
+}
