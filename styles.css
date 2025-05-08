@@ -387,7 +387,7 @@ h2.job-title {
         }
 
         .skill-box, .experience-box {
-            width: 20%; /* Full width for skill and experience boxes */
+            width: 25%; /* Full width for skill and experience boxes */
             margin-bottom: 3px; /* Reduce margin for tight space */
         }
 
