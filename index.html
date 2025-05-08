@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta name="description" content="Tanya Nicole Lustre's Portfolio – Virtual Assistant, Content Moderator, and Website Designer.">
+  <meta name="keywords" content="Tanya Nicole Lustre, Virtual Assistant, Content Moderator, Web Designer, Portfolio, HTML, CSS">
+  <meta name="author" content="Tanya Nicole Lustre">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanya Nicole - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar with Navigation -->
+    <div class="sidebar">
+      <img src="portfolio.jpg" alt="Profile Picture" />
+      <h1>Tanya Nicole</h1>
+      <p>Virtual Assistant<br>Content Moderator<br>Website Designer</p>
+      <ul>     
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills & Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-button" id="theme-toggle">⋆⁺₊⋆ ☾⋆⁺₊⋆</button>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Home Section -->
+      <div id="home" class="content-box">
+        <h1>Tanya Nicole P. Lustre</h1>
+        <p>Welcome to my portfolio! Explore my skills, experiences, and projects.</p>
+      </div>
+
+
+
+      <!-- About Me Section -->
+      <div class="content-box">
+        <h1>About Me</h1>
+        <p>👩‍💻 Hi, I'm Tanya Nicole! With a background in Information Technology and Electronics Technology, I blend my technical expertise with creativity to approach projects with passion and precision. I'm always looking for ways to grow, learn, and contribute in exciting and meaningful ways.</p>
+        
+        <h2>Work Ethics</h2>
+        <p>💼 I'm dedicated, detail-oriented, and always strive for excellence. I take the initiative to find solutions to challenges and remain committed to delivering high-quality results. Whether working independently or as part of a team, I approach everything with professionalism and determination. </p>
+    
+        <h2>Personality</h2>
+        <p>🌟 I'm naturally curious and love learning new skills and taking on new challenges. I'm open-minded, adaptable, and thrive when collaborating with others to bring creative ideas to life. I believe in maintaining a healthy work-life balance and approach every task with a positive attitude. </p>
+        
+        <h2>Hobbies</h2>
+        <p>📸 In my free time, you'll find me exploring the latest tech trends, reading books, and creating content for social media. I'm into photography, gaming, and discovering new places through travel. I'm also passionate about continuous learning and often dive into online courses related to tech and design. </p>
+    
+        <h2>Education</h2>
+        <p>🎓 I have a degree in Information Technology and Electronics Technology, which has provided me with a solid foundation in technical skills and problem-solving abilities. This education has been crucial in my journey as a web designer and content creator, allowing me to blend creativity with functionality in all my projects.</p>
+    </div>
+    
+
+
+
+      <!-- Skills Section -->
+      <div id="skills" class="content-box">
+        <h2>Skills & Experience</h2>
+        <div class="skills-container">
+          <div class="skill-box">
+            <h3>Skills</h3>
+            <p><span class="emoji">💻</span> HTML <span class="stars">⭐⭐⭐⭐⭐</span></p>
+            <p><span class="emoji">🎨</span> CSS <span class="stars">⭐⭐⭐⭐⭐</span></p>
+            <p><span class="emoji">📜</span> JavaScript <span class="stars">⭐⭐⭐⭐</span></p>
+            <p><span class="emoji">🎥</span> TikTok Editing <span class="stars">⭐⭐⭐⭐⭐</span></p>
+            <p><span class="emoji">📊</span> Microsoft Office <span class="stars">⭐⭐⭐⭐</span></p>
+            <p><span class="emoji">📚</span> Google Suite <span class="stars">⭐⭐⭐⭐</span></p>
+            <p><span class="emoji">💻</span> Basic Programming (C, Java, SQL) <span class="stars">⭐⭐⭐</span></p>
+            <p><span class="emoji">🔧</span> Responsive Design <span class="stars">⭐⭐⭐⭐</span></p>
+            <p><span class="emoji">🖌️</span> Layout Structuring <span class="stars">⭐⭐⭐⭐</span></p>
+            <p><span class="emoji">📝</span> Data Entry <span class="stars">⭐⭐⭐⭐⭐</span></p>
+          </div>
+          <div class="experience-box">
+            <h3>Experience</h3>
+            <p><span class="emoji">📧</span> 2 Years - Chat & Email Support</p>
+            <p><span class="emoji">📞</span> 8 Months - Outbound Calls</p>
+            <p><span class="emoji">🏨</span> Hostel Intern - Guest Reception</p>
+            <p><span class="emoji">🗺️</span> Tourism Office - Front Desk & Info</p>
+            <p><span class="emoji">🎥</span> Social Media Content Creator & Trend Scout</p>
+            <p><span class="emoji">🔍</span> Content Moderator</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Section -->
+      <div id="portfolio" class="content-box">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <img src="sample1.jpg" alt="Project 1" onclick="openLightbox(this)" />
+          <img src="sample2.jpg" alt="Project 2" onclick="openLightbox(this)" />
+          <img src="sample3.jpg" alt="Project 3" onclick="openLightbox(this)" />
+          <img src="sample4.jpg" alt="Project 4" onclick="openLightbox(this)" />
+          <img src="sample5.jpg" alt="Project 5" onclick="openLightbox(this)" />
+          <img src="sample6.jpg" alt="Project 6" onclick="openLightbox(this)" />
+          <img src="sample7.jpg" alt="Project 7" onclick="openLightbox(this)" />
+          <img src="sample8.jpg" alt="Project 8" onclick="openLightbox(this)" />
+          <img src="sample9.jpg" alt="Project 9" onclick="openLightbox(this)" />
+          <img src="sample10.jpg" alt="Project 10" onclick="openLightbox(this)" />
+        </div>
+      </div>
+      
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Full view" />
+      </div>
+      
+      
+
+      <!-- Contact Me Section -->
+      <div id="contact" class="content-box">
+        <h2>Contact Me</h2>
+        <div class="contact-box">
+          <p>If you'd like to reach out to me, feel free to contact me via email or social media!</p>
+          <p><span class="emoji">📧</span> Email: <a href="mailto:lustretanyanicole8@gmail.com">lustretanyanicole8@gmail.com</a></p>
+          <p><span class="emoji">💼</span> LinkedIn: <a href="https://www.linkedin.com/in/tanya-nicole-lustre-450192226/">tanya-nicole-lustre</a></p>
+          <p><span class="emoji">📱</span> WhatsApp: <a href="https://wa.me/+639691202125">+639691202125</a></p>
+          <p><span class="emoji">📱</span> Telegram: <a href="https://t.me/tanyalus3">tanyalus3</a></p>
+          <p><span class="emoji">📱</span> Instagram: <a href="https://www.instagram.com/tannnn.nl">tannnn.nl</a></p>
+          <p><span class="emoji">💬</span> Facebook: <a href="https://www.facebook.com/TanyaNicole">Tanya Nicole</a></p>
+          
+          <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <div class="error-message" id="name-error"></div>
+          
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <div class="error-message" id="email-error"></div>
+          
+            <label for="phone">Phone Number (Include Country Code)</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+639123456789" />
+            <div class="error-message" id="phone-error"></div>
+            <div class="country-info" id="country-info"></div>
+          
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="error-message" id="message-error"></div>
+          
+            <button type="submit">Send Message</button>
+          </form>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

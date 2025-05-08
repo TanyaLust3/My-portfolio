@@ -1,0 +1,303 @@
+/* General Styles */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cf97b2; /* Soft pastel pink */
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  body.loaded {
+    opacity: 1;
+  }
+  
+
+body.dark-theme {
+    background-color: #3a1c3d; 
+    color: #2e2e2e; /* Dark gray text for dark mode */
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p,
+body.dark-theme a {
+    color: #2e2e2e; /* Dark gray text for headings and paragraphs */
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f6d1e0; /* Light pastel pink for sidebar */
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sidebar Navigation - Dark Mode Adjustments */
+body.dark-theme .sidebar {
+    background-color: #e0c8f2; /* Light pastel purple background for sidebar in dark mode */
+}
+
+.sidebar img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #4e2d3a; /* soft pink border */
+    box-shadow: 0 0 10px rgba(248, 200, 220, 0.5); /* subtle glow */
+  }
+  
+
+.sidebar h1 {
+    color: #000000; /* Light pink text for the heading */
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* White background for links */
+    text-decoration: none;
+    color: #49263c; /* Pink text */
+    font-weight: normal;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Sidebar Links */
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #feb0ca; /* Pink hover background */
+    color: rgb(240, 240, 240); /* White text on hover */
+}
+
+
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 40px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.content-box {
+    background-color: #f8f2f5;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects for all Content Boxes */
+.content-box:hover {
+    transform: scale(1.03);
+    background-color: #fdf3f5; /* Very light pink for hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Interactive Hover Effects for Sidebar */
+.sidebar ul li a:hover {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-box, .experience-box {
+    background-color: #fce6eb; /* Soft pastel pink for skill and experience boxes */
+    padding: 20px;
+    border-radius: 30px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effects for Skills & Experience Boxes */
+.skill-box:hover, .experience-box:hover {
+    background-color: #f4eff0; /* Light pink hover effect for skill and experience boxes */
+    transform: scale(1.05);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects for Portfolio Images */
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+}
+
+a:hover, button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff80ab; /* Pastel pink button */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff99b3; /* Lighter pastel pink for hover effect */
+}
+
+/* Dark Mode Toggle */
+.theme-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff80ab; /* Pastel pink button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    background-color: #fbd9e1; /* Lighter pastel pink for hover effect */
+}
+
+/* Tanya Nicole - White font */
+h1#name {
+    color: rgb(255, 255, 255); /* White font for Tanya Nicole */
+    text-align: center;
+}
+
+/* Job Titles - Bold Black */
+h2.job-title {
+    font-weight: bold;
+    color: #000000; /* Black font for job titles */
+    text-align: center;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.country-info {
+    color: green;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
